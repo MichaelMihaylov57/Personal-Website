@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Mihaylov Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- HTML part of font --> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="C:\Users\Michael\Desktop\My Website\font-awesome-4.7.0\css\font-awesome.min.css"> <!-- Mobile version menu font --> 
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="myIndex.html"><img src="myImages/NMLogo.png"></a> <!-- NM Logo --> 
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- Mobile version menu icon LINK: https://fontawesome.com/v4/icons/ --> 
+                <ul>
+                    <li> <a href="">HOME</a> </li> <!-- All clickable links --> 
+                    <li> <a href="#p1">INTRODUCTION</a> </li>
+                    <li> <a href="#p2">ABOUT ME</a> </li>
+                    <li> <a href="#p3">CONTACT</a> </li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- showMenu and hideMenu are for clicking icons in mobile mode --> 
+        </nav>
+
+<div class="text-box"> <!-- mid text --> 
+    <h1>Michael Mihaylov</h1>
+    <p>Incoming Web Developer at Northwestern Mutual</p>
+    <a href="Michael_Mihaylov_Resume.pdf" class="resume-btn">My Resume</a> <!-- resume btn = mid text link --> 
+</div>
+
+    </section>
+
+
+<!-- INTRO --> 
+
+<section id="p1" class="intro"> 
+    <h1 >Introduction</h1>
+
+    <div class="rowIntro">
+
+        <div class="intro-col">
+            <h4>I am currently a Junior Studying Computer Science at the University of Illinois at Chicago.<br>
+                I have a passion for working on Front-End Software, and will be Interning at Northwestern Mutual<br>
+                as a Web Developer over the summer of 2022. I have coded this entire website from scratch to showcase<br>
+                myself, my skills and my proficiencies in coding, so feel free to look around!
+            </h4>
+        </div>   
+  
+    </div>
+
+</section>
+
+
+<!-- ABOUT ME --> 
+
+<section id="p2" class="about"> 
+    <nav2>
+        <h1 class="hv1">Technical Skills</h1>
+
+
+
+            <div class="about-col">
+                <h4 class="hv4">
+                    LANGUAGES<br>
+                    • C++/C<br>
+                    • Java<br>
+                    • JavaScript<br>
+                    • HTML/CSS<br>
+                    • Python<br>
+                    • F#<br>
+                    • SQL<br>
+                </h4>
+            </div>   
+
+            <div class="about-col">
+                <h4 class="hv4">
+                    DEVELOPER TOOLS/FRAMEWORKS<br>
+                    • Linux<br>
+                    • Unix<br>
+                    • Visual Studio<br>
+                    • GIT<br>
+                    • Maven<br>
+                    • .NET<br>
+                    • Node.js<br>
+                </h4>
+            </div>   
+
+            <div class="about-col">
+                <h4 class="hv4">
+                    MISCELLANEOUS<br>
+                    • Data Structures<br>
+                    • Algorithms<br>
+                    • Concurrency<br>
+                    • OOL<br>
+                    • Databases<br>
+                    • Sony VEGAS<br>
+                    • Photoshop<br>
+                </h4>
+            </div>   
+
+    </nav2>
+</section>
+
+
+<!-- MY LINKS -->
+
+<section id="p3" class="links">
+    <h1>My Links</h1>
+
+    <div class="LinksRow">
+        <div class="links-col">
+            <a href="https://www.linkedin.com/in/michael-mihaylov"> <img src="myImages/BH.png"></a> <!-- Linkedin link -->
+            <h3>LinkedIn</h3>
+        </div>
+        <div class="links-col">
+            <a href="https://github.com/MichaelMihaylov57"> <img src="myImages/PB.png"></a> <!-- Github link -->
+            <h3>GitHub</h3>
+        </div>
+
+        <div class="links-col">
+            <img src="myImages/PC.png"> <!-- Source code link -->
+            <h3>Website Source Code</h3>
+        </div>
+    </div>       
+    </div>
+
+</section>
+
+
+<script>
+
+    var navLinks = document.getElementById("navLinks"); // JavaScript functions for right-hand menu when in mobile mode
+
+    function showMenu(){
+        navLinks.style.right = "0"; // shows menu when clicked
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"; // hides menu when clicked
+    }
+
+</script>
+
+</body>
+</html>
